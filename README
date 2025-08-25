@@ -1,0 +1,16 @@
+1. build driver:
+$ make
+
+2. load driver into kernel
+$ sudo chmod +x loadDriverIntoKernel.sh
+$ ./loadDriverIntoKernel.sh
+
+3. This script sets up two 10BASE-T1 Ethernet interfaces on a Linux PC and configures the PLCA (Physical Layer Collision Avoidance) parameters for both.
+$ sudo chmod +x configureEthernetDevices.sh
+$ ./configureEthernetDevices.sh
+
+4. build application
+$ cd app
+$ make
+$ sudo chmod +x run_test.sh
+$ ./run_test.h

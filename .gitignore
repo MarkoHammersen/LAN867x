@@ -1,0 +1,51 @@
+# --- Build artifacts ---
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Executables
+*.out
+*.elf
+*.exe
+
+# Object files and libraries
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.old
+*.orig
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.iml
+*.swp
+*~
+*.code-workspace
+
+# Coverage / Test reports
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+# Optional: PC-lint / static analysis outputs
+*.lnt
+*.lint
+
+# Python virtual environments (if using Python scripts for tooling)
+venv/
+__pycache__/
