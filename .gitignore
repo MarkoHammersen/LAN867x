@@ -42,3 +42,5 @@ coverage/
 # Python virtual environments (if using Python scripts for tooling)
 venv/
 __pycache__/
+history.txt
+microchip_t1s.c

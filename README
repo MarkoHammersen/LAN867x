@@ -1,13 +1,16 @@
+0.1 download driver
+$wget https://raw.githubusercontent.com/torvalds/linux/refs/heads/master/drivers/net/phy/microchip_t1s.c
+
 1. build driver:
-$ make
+$make
 
 2. load driver into kernel
-$ sudo chmod +x loadDriverIntoKernel.sh
-$ ./loadDriverIntoKernel.sh
+$sudo chmod +x loadDriverIntoKernel.sh
+$./loadDriverIntoKernel.sh
 
 3. Insert two EVB-LAN8670-USB
 4. determine Network names of devices
-$ ip a
+$ip a
 
 5. This script sets up two 10BASE-T1 Ethernet interfaces on a Linux PC and configures the PLCA (Physical Layer Collision Avoidance) parameters for both.
 Modify these according to result of "$ ip a" and set desired IP Addresses in configureEthernetDevices.sh:
@@ -21,17 +24,18 @@ IF2="enx6827199270d1"
 IP2="192.168.10.12/24"
 NODE_ID2=1
 
-$ sudo chmod +x configureEthernetDevices.sh
-$ ./configureEthernetDevices.sh
+$sudo chmod +x configureEthernetDevices.sh
+$./configureEthernetDevices.sh
 
 6. build application
-$ cd app
-$ make
+$cd app
+$make
 
 7. in run_test.sh modify according to results of "$ip a":
 RECEIVER_IF="enx6827199270d1"
 SENDER_IF="enx6827199267cd"
 DEST_MAC="68:27:19:92:70:d1"  # MAC-Adresse des Receivers
 
-8. $ sudo chmod +x run_test.sh
-$ ./run_test.h
+8. run test
+$sudo chmod +x run_test.sh
+$./run_test.h
