@@ -44,3 +44,14 @@ venv/
 __pycache__/
 history.txt
 microchip_t1s.c
+.microchip_t1s.ko.cmd
+.microchip_t1s.mod.cmd
+.microchip_t1s.mod.o.cmd
+.microchip_t1s.o.cmd
+.Module.symvers.cmd
+.modules.order.cmd
+microchip_t1s.ko
+microchip_t1s.mod
+microchip_t1s.mod.c
+Module.symvers
+modules.order
